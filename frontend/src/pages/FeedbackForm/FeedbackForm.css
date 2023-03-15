@@ -1,0 +1,131 @@
+.feedbackdiv {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: difference;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: calc(100vh - 70px);
+}
+.feedbackdiv h1 {
+  color: #ffa40c;
+  text-shadow: 3px 3px 3px #1b0908;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.Qdiv-header {
+  position: absolute;
+  top: 0;
+  border-radius: 30px 30px 0 0;
+  width: 100%;
+  height: 12vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(180deg, rgb(55, 55, 55) 0%, rgb(0, 0, 0) 100%);
+}
+
+.Qdiv {
+  display: flex;
+  font-size: 25px;
+  padding: 40px;
+  background: #fdfdfd;
+  background: linear-gradient(180deg, #fdfdfd 0%, #ececec 100%);
+  box-shadow: 0px 0px 25px black;
+  border-radius: 30px;
+  width: 45vw;
+  height: 55vh;
+  position: relative;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 5vh;
+  align-items: center;
+  align-content: center;
+  flex-wrap: nowrap;
+}
+
+.feedbackdiv input {
+  border-radius: 10px !important;
+  color: #361413 !important;
+  font-size: 22.5px !important;
+  font-weight: bold !important;
+  width: 150px !important;
+  height: 45px !important;
+  border: none;
+  background-color: #ffa40c !important;
+}
+
+.feedbackdiv input:hover {
+  box-shadow: 0 0 10px #d1d1d1;
+}
+
+.feedbackdiv input:active {
+  box-shadow: 0 0 10px #d1d1d1;
+  background-color: #e79200 !important;
+}
+
+.feedbackdiv select {
+  width: 200px;
+  height: 30px;
+  margin-left: 5px;
+  font-size: 18px;
+}
+.feedbackdiv textarea {
+  font-size: 15px;
+  max-width: 20vw;
+  min-width: 20vw;
+  max-height: 15vh;
+  min-height: 15vh;
+  color: #3e1f1e;
+  font-weight: bold;
+}
+
+.rating-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.rating-div p {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.star-svg {
+  margin: 0 10px;
+  width: 5vw;
+  height: 5vw;
+}
+
+.rating-div select {
+    margin: 4vh 0 2vh 0;
+  width: 20vw;
+  height: 7.5vh;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.rating-div select::placeholder {
+  font-size: 15px;
+  font-weight: normal;
+}
+
+.dropdown-option {
+  width: 30px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.dropdown-option:hover {
+  color: #ffa40c !important;
+  background-color: #361413 !important;
+  font-size: 15px !important;
+  font-weight: bold !important;
+}

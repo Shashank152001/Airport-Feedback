@@ -1,0 +1,24 @@
+.homepage-main-div{
+    width: 100vw;
+    max-width: 100% !important;
+    height: calc(100vh - 70px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: bottom;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 50px;
+}
+
+@media(max-width:400px){
+    .homepage-main-div{
+        height: 100vh !important;
+        width: 100vw;
+        min-height: 100% !important;
+        max-width: 100% !important;
+    }
+    
+}

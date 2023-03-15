@@ -1,0 +1,54 @@
+.navbar {
+  width: 100%;
+  height: 70px !important;
+  background: rgb(83, 212, 40);
+  background: linear-gradient(180deg, rgb(60, 28, 27) 0%, rgb(36, 14, 13) 100%);
+}
+.navbar-hidden {
+  display: none !important;
+}
+
+.navbar-logo-div {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.logo-image {
+  height: 50px;
+}
+.navbar-logo-div p {
+  text-shadow: 3px 3px 3px #000000;
+  font-size: 25px !important;
+}
+
+.navbar p {
+  font-size: 17px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+.airportName{
+  color:antiquewhite
+}
+.nav-link {
+  color: #7eddee !important;
+}
+.nav-link:hover {
+  color: #1e97c6 !important;
+}
+
+.navbar-brand:hover {
+  color: white !important;
+}
+
+@media(max-width:400px){
+  .airportName{
+    display:none;
+    visibility: hidden !important;
+    width: 0px;
+} 
+}
