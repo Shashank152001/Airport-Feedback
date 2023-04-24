@@ -110,9 +110,9 @@ const UserLogin = () => {
             />
             </div>
             <input type="submit" value="Submit" className="login-form-submit" />
-            {/* <Link to="/admin-signin" className="other-login">
+            <Link to="/admin-signin" className="other-login">
               Are you an admin? Click to Login
-            </Link> */}
+            </Link>
           </form>
         </div>
       </div>

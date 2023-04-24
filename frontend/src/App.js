@@ -8,9 +8,9 @@ import HomePage from "./pages/HomePage/HomePage";
 import NavigationBar from "./common/components/NavigationBar";
 import FeedbackPage from "./pages/FeedbackPage/FeedbackPage";
 import FeedbackForm from "./pages/FeedbackForm/FeedbackForm";
-// import AdminLogin from "./pages/AdminLogin/AdminLogin";
+import AdminLogin from "./pages/AdminLogin/AdminLogin";
 import AboutPage from "./pages/AboutPage/AboutPage";
-// import AdminFeedback from "./pages/AdminFeedback/AdminFeedback";
+import AdminFeedback from "./pages/AdminFeedback/AdminFeedback";
 
 
 export const Context = React.createContext();
@@ -55,12 +55,12 @@ function App() {
         <NavigationBar />
         <Routes>
           <Route path="/" element={(user.type) ? <Navigate replace to={"/home"} /> : <UserLogin/>} />
-          {/* <Route path="/admin-signin" element={(user.type) ?<Navigate replace to={"/home"}/> : <AdminLogin />} /> */}
+          <Route path="/admin-signin" element={(user.type) ?<Navigate replace to={"/home"}/> : <AdminLogin />} />
           <Route path="/about" element={(user.type) ? <AboutPage /> : <Navigate replace to={"/"}/>} />
-          {/* <Route
+          <Route
             path="/adminFeedback/:feedbackType"
             element={(user.type==="admin") ? <AdminFeedback /> : (user.type==="user") ? <Navigate replace to={"/home"}/> : <Navigate replace to={"/"}/>}
-          /> */}
+          />
           <Route path="/home" element={(user.type) ? <HomePage /> : <Navigate replace to={"/"}/>} />
           <Route
             path="/feedback/:feedbackType/:question"

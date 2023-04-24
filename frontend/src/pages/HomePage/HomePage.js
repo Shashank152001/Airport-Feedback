@@ -15,7 +15,9 @@ function HomePage() {
             : "url('Images/airport-4.jpg')"
       }}
     >
-      <div>{loggedInDetails.userType === "user"  }</div>
+      <div>{loggedInDetails.userType === "user" && <FlightDetailsPage />  }</div>
+      <div>{loggedInDetails.userType === "user"?'':<p>Hello</p>  }
+      </div>
     </div>
   );
 }

@@ -1,0 +1,22 @@
+.feedback-data-display{
+    margin : 50px 0px;
+    height: fit-content;
+    min-width: 30%;
+    padding: 10px 50px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.feedback-data-display-div{
+    width: 60%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center !important;
+    align-items: center !important;
+    text-align: center;
+}
+.feedback-data-display-progress-bar-inside-div{
+    width: 50%;
+}
