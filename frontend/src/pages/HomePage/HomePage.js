@@ -19,7 +19,11 @@ function HomePage() {
       fetch('/api/food/').then((res)=>{ return res.json()}).then((data)=>{console.log(data.data)
         let n =data.data.length;
         console.log(n);
-        setFoodFeedback(data.data[n-1].rating)
+        var total=0;
+        for (let index = 0; index < data.data.length; index++) {
+          total+=data.data[index].rating;
+        }
+        setFoodFeedback(total/n)
         console.log(foodfeedback);
         // data.data.map(data=>{
         //   console.log(data.rating/data.length)
@@ -30,7 +34,11 @@ function HomePage() {
     fetch('/api/airRoute/').then((res)=>{ return res.json()}).then((data)=>{console.log(data.data)
       let n =data.data.length;
       console.log(n);
-      setAirFeedback(data.data[n-1].rating)
+      var total1=0;
+        for (let index = 0; index < data.data.length; index++) {
+          total1+=data.data[index].rating;
+        }
+      setAirFeedback(total1/n)
       console.log(airfeedback);
       // data.data.map(data=>{
       //   console.log(data.rating/data.length)
@@ -41,7 +49,11 @@ useEffect(()=>{
   fetch('/api/bag/').then((res)=>{ return res.json()}).then((data)=>{console.log(data.data)
     let n =data.data.length;
     console.log(n);
-    setBagFeedback(data.data[n-1].rating)
+    var total2=0;
+        for (let index = 0; index < data.data.length; index++) {
+          total2+=data.data[index].rating;
+        }
+    setBagFeedback(total2/n)
     console.log(bagfeedback);
     // data.data.map(data=>{
     //   console.log(data.rating/data.length)
@@ -52,7 +64,11 @@ useEffect(()=>{
   fetch('/api/loun/').then((res)=>{ return res.json()}).then((data)=>{console.log(data.data)
     let n =data.data.length;
     console.log(n);
-    setLoungeFeedback(data.data[n-1].rating)
+    var total3=0;
+        for (let index = 0; index < data.data.length; index++) {
+          total3+=data.data[index].rating;
+        }
+    setLoungeFeedback(total3/n)
     console.log(loungfeedback);
     // data.data.map(data=>{
     //   console.log(data.rating/data.length)
@@ -63,7 +79,11 @@ useEffect(()=>{
   fetch('/api/wash/').then((res)=>{ return res.json()}).then((data)=>{console.log(data.data)
     let n =data.data.length;
     console.log(n);
-    setWashFeedback(data.data[n-1].rating)
+    var total4=0;
+        for (let index = 0; index < data.data.length; index++) {
+          total4+=data.data[index].rating;
+        }
+    setWashFeedback(total4/n)
     console.log(washfeedback);
     // data.data.map(data=>{
     //   console.log(data.rating/data.length)
@@ -74,7 +94,11 @@ useEffect(()=>{
   fetch('/api/check/').then((res)=>{ return res.json()}).then((data)=>{console.log(data.data)
     let n =data.data.length;
     console.log(n);
-    setCheckFeedback(data.data[n-1].rating)
+    var total5=0;
+        for (let index = 0; index < data.data.length; index++) {
+          total5+=data.data[index].rating;
+        }
+    setCheckFeedback(total5/n)
     console.log(checkfeedback);
     // data.data.map(data=>{
     //   console.log(data.rating/data.length)
@@ -85,7 +109,11 @@ useEffect(()=>{
   fetch('/api/help/').then((res)=>{ return res.json()}).then((data)=>{console.log(data.data)
     let n =data.data.length;
     console.log(n);
-    setHelpFeedback(data.data[n-1].rating)
+    var total6=0;
+        for (let index = 0; index < data.data.length; index++) {
+          total6+=data.data[index].rating;
+        }
+    setHelpFeedback(total6/n)
     console.log(helpfeedback);
     // data.data.map(data=>{
     //   console.log(data.rating/data.length)
@@ -96,7 +124,11 @@ useEffect(()=>{
   fetch('/api/storess/').then((res)=>{ return res.json()}).then((data)=>{console.log(data.data)
     let n =data.data.length;
     console.log(n);
-    setStoreFeedback(data.data[n-1].rating)
+    var total7=0;
+        for (let index = 0; index < data.data.length; index++) {
+          total7+=data.data[index].rating;
+        }
+    setStoreFeedback(total7/n)
     console.log(storefeedback);
     // data.data.map(data=>{
     //   console.log(data.rating/data.length)
