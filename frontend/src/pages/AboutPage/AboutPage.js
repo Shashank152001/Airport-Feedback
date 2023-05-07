@@ -20,7 +20,7 @@ const AboutPage = () => {
             different aspects of airport. Project is to collect the data
             electronically in the form of an app with selectable parameters and
             rating. The app will be available by default on the free Wi-Fi
-            service that SKIT, Jaipur is going to provide at the airport.
+            service that IIA is going to provide at the airport.
           </p>
         </div>
 
