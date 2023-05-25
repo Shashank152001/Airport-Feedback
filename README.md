@@ -7,7 +7,7 @@
 
 
 # Credentials for admin
-## Username : Shashank15062001@gmail.com
+## Username : shashank15062001@gmail.com
 ## Password : Shashank123
 
 # Credentials for passenger

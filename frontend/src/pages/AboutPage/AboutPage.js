@@ -24,36 +24,6 @@ const AboutPage = () => {
           </p>
         </div>
 
-        <h2>Designed & Developed By: </h2>
-        <div className="about-developed">
-          <div className="developer-div">
-            <img
-              className="developer-logo"
-              src="/Images/shashank-dp.jpeg"
-              alt=""
-            />
-            <h3>Shashank Varshney</h3>
-            <div className="about-contact-information">
-              <a
-                href="https://www.linkedin.com/in/shashank-varshney-86sh001/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <LinkedInIcon fontSize="medium" />
-              </a>
-              <a
-                href="https://github.com/Shashank152001"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <GitHubIcon fontSize="medium" />
-              </a>
-              <a href="mailto:varshneyshashank8846@gmail.com">
-                <EmailIcon fontSize="medium" />
-              </a>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   );
