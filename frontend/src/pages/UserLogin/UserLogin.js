@@ -36,9 +36,10 @@ const UserLogin = () => {
           type: "UserLogin",
           payload: {
             type: "user",
-            flightNumber: data.data.flightNumber,
-            gate: data.data.gate,
+            flightNumber: data.data.ticket.flightNumber,
+            gate: data.data.ticket.gate,
             userName: userDetails.name,
+            userId: data.data.user._id
           },
         });
         setUser({type:"user"})
@@ -46,9 +47,10 @@ const UserLogin = () => {
           "UserName",
           JSON.stringify({
             type: "user",
-            flightNumber: data.data.flightNumber,
-            gate: data.data.gate,
-            userName: userDetails.name
+            flightNumber: data.data.ticket.flightNumber,
+            gate: data.data.ticket.gate,
+            userName: userDetails.name,
+            userId: data.data.user._id
           })
         );
         setUserDetails({});

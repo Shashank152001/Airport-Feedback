@@ -27,7 +27,8 @@ const airlinesRoutes = require('./routes/airlinesRoute')
 const storesRoutes = require('./routes/storesRoute')
 const baggageRoutes = require('./routes/baggageRoute')
 const washRoutes = require('./routes/washRoute')
-const checkRoutes = require('./routes/checkRoute')
+const checkRoutes = require('./routes/checkRoute');
+const { sendEmail } = require('./utils/mail');
 
 connectDb();
 
@@ -65,6 +66,7 @@ app.use('/api/bag',bagRoute)
 app.use('/api/food',foodRoute)
 app.use('/api/wash',washRoutes)
 app.use('/api/check',checkRoutes)
+app.get('/api/sendemail',async(req,res)=>{await sendEmail({userEmail:"svarshney215@gmail.com"}); return res.json({data:"message send successfully"})})
 
 // static files (build of your frontend)
 if (process.env.NODE_ENV === 'production') {

@@ -41,8 +41,8 @@ const AdminFeedback = () => {
             typeOfFeedback[name] = { feedbackMessage: [] };
           for (let i in obj) {
             if (i === "feedbackMessage") {
-              typeOfFeedback[name][i].push(obj[i]);
-            } else if (i !== "_id" && i !== "__v" && i !== "name") {
+              typeOfFeedback[name][i].push({name: obj.feedbackBy?.name, message: obj[i]});
+            } else if (i !== "_id" && i !== "__v" && i !== "name" && i!=="feedbackBy") {
               if (i in typeOfFeedback[name]) typeOfFeedback[name][i] += obj[i];
               else typeOfFeedback[name][i] = obj[i];
             }
@@ -53,10 +53,11 @@ const AdminFeedback = () => {
       } else {
         const details = { feedbackMessage: [] };
         fetchedData.data.map((obj) => {
+          console.log(obj);
           for (let i in obj) {
             if (i === "feedbackMessage") {
-              details[i].push(obj[i]);
-            } else if (i !== "_id" && i !== "__v") {
+              details[i].push({name: obj.feedbackBy?.name, message: obj[i]});
+            } else if (i !== "_id" && i !== "__v" && i!=="feedbackBy") {
               if (i in details) details[i] += obj[i];
               else details[i] = obj[i];
             }
@@ -115,9 +116,9 @@ const AdminFeedback = () => {
                     className="admin-feedback-page-list"
                     bordered
                     dataSource={feedbackMessages.filter((message) => {
-                      return message !== "NA";
+                      return message.message !== "NA";
                     })}
-                    renderItem={(item) => <List.Item>{item}</List.Item>}
+                    renderItem={(item) => <List.Item>{`${item.name}: ${item.message}`}</List.Item>}
                   />
                 </Panel>
               </Collapse>
@@ -162,9 +163,9 @@ const AdminFeedback = () => {
                           className="admin-feedback-page-list"
                           bordered
                           dataSource={messages.filter((message) => {
-                            return message !== "NA";
+                            return message.message !== "NA";
                           })}
-                          renderItem={(item) => <List.Item>{item}</List.Item>}
+                          renderItem={(item) => <List.Item>{`${item.name}: ${item.message}`}</List.Item>}
                         />
                       </Panel>
                     </Collapse>

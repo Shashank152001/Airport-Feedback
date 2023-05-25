@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState,useContext } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import FormsData from "../../data/FormData";
+import { Context } from "../../App";
 import "./FeedbackForm.css";
 import { Rating } from "react-simple-star-rating";
 import { useHttpClient } from "../../hooks/useHttpClient";
@@ -8,6 +9,7 @@ import Swal from "sweetalert2";
 import Loader from './../../common/components/Loader';
 
 const FeedbackForm = () => {
+  const { loggedInDetails } = useContext(Context);
   const { isLoading,sendRequest } = useHttpClient();
   const { feedbackType, question } = useParams();
   const navigate = useNavigate();
@@ -59,10 +61,11 @@ const FeedbackForm = () => {
     } else {
       // console.log(feedbackData);
       try {
+        // console.log(loggedInDetails);
         await sendRequest(
           `/api/${feedbackType}/`,
           "POST",
-          JSON.stringify(feedbackData),
+          JSON.stringify({feedbackBy:loggedInDetails.userId,...feedbackData}),
           {
             Accept: "application/json",
             "Content-Type": "application/json",

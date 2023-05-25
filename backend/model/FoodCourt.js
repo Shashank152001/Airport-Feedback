@@ -2,6 +2,7 @@ const mongoose = require('mongoose');
 const { Schema } = mongoose;
 
 const foodCourtFeedbackSchema = new Schema({
+    feedbackBy: { type: Schema.Types.ObjectId, ref: "user" },
     service : {type : Number, required : true,},
     staff : {type : Number, required : true,},
     foodQuality : {type : Number, required : true,},

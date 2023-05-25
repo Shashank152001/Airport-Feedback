@@ -10,7 +10,7 @@ const saveUser = asyncHandler(async (req, res, next)=> {
         const user=await User(req.body).save();
         res.status(201).json({
         success : true,
-        data : ticket
+        data : {ticket,user}
         })
 });
 

@@ -57,15 +57,15 @@ const FlightDetailsPage = () => {
       <div className="flight-details-container">
         <div className="flight-details-element">
           <h3>Airline Name</h3>
-          <p>{flightData.airlineName}</p>
+          <p>{flightData?.airlineName ?? "Air Aisa"}</p>
         </div>
         <div className="flight-details-element">
           <h3>Aircraft Model</h3>
-          <p>{flightData.aircraftModel}</p>
+          <p>{flightData?.aircraftModel ?? "Airbus A321"}</p>
         </div>
         <div className="flight-details-element">
           <h3>Flight Number</h3>
-          <p>{flightData.flightNumber}</p>
+          <p>{flightData?.flightNumber ?? "6E 373"}</p>
         </div>
       </div>
 
@@ -75,9 +75,9 @@ const FlightDetailsPage = () => {
       >
         <div className="flight-important-div">
           <div className="flight-important">
-            <h1>{flightData.departureAirportName} </h1>
+            <h1>{flightData?.departureAirportName ?? "Jaipur Airport"} </h1>
             <FlightIcon className="flight-arrow" />
-            <h1>{flightData.arrivalAirportName}</h1>
+            <h1>{flightData?.arrivalAirportName ?? "Mumbai Airport"}</h1>
           </div>
         </div>
       </div>
@@ -85,11 +85,11 @@ const FlightDetailsPage = () => {
       <div className="flight-details-container">
         <div className="flight-details-element">
           <h3>Departure</h3>
-          <p>{flightData.departureTime}</p>
+          <p>{flightData?.departureTime ?? "12/05/2023"}</p>
         </div>
         <div className="flight-details-element">
           <h3>Arrival</h3>
-          <p>{flightData.arrivalTime}</p>
+          <p>{flightData?.arrivalTime ?? "13/05/2023"}</p>
         </div>
       </div>
     </div>

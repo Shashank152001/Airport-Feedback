@@ -5,7 +5,8 @@ export const initialLoggedInDetails={
     flightNumber :"",
     gate : "",
     token : "",
-    tokenExpiry :"" 
+    tokenExpiry :"" ,
+    userId:""
 } 
 
 export const reducer=(state,action)=>{
@@ -18,7 +19,8 @@ export const reducer=(state,action)=>{
             flightNumber : action.payload.flightNumber,
             gate : action.payload.gate,
             userName : action.payload.userName,
-            token : action.payload.token
+            token : action.payload.token,
+            userId:action.payload.userId
         }
     }
     if(action.type==="UserLogout")
