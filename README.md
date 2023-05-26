@@ -2,7 +2,7 @@
 ## Airport Feedback App collects feedback forms of customer's satisfaction/grievance of different aspects of airport. Project is to collect the data electronically in the form of an app with selectable parameters and rating. The app will be available by default on the free Wi-Fi service that IIA is going to provide at the airport.
 
 # Deployment Link
-## https://airport-feedback-ndr8.vercel.app/
+## https://airport-feedback-ndr8-shashank152001.vercel.app/
 
 
 
