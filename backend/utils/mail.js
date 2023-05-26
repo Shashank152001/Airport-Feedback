@@ -21,6 +21,7 @@ const sendEmail = async (data) => {
       from: "INDIA INTERNATIONAL AIRPORT <adairfeedbackdoc@hotmail.com>",
       to: `${data.userEmail}`,
       subject: `Feedback Response Recorded Successfully`,
+      // text:`Welcome to Airport`
       text: `Your Feedback for ${data.type} Submitted
 
       Dear ${data.userName},
