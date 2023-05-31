@@ -84,6 +84,7 @@ const FormData = {
   },
   washroom: {
     1: { q: "Cleanliness", next: 2, ref: "cleanliness", ratingType: "stars" },
+    // 2:{ q: "Cleanlinesss", next: 3, ref: "cleanlinesss", ratingType: "stars" },
     2: {
       q: "Availability Of Toiletries",
       next: 3,
