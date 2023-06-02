@@ -35,6 +35,8 @@
   ## Passenger submit feedback successfully
   <img src="Final_Project_SS/project8.jpg">
 
+  ## Passenger receiveing mail after feedback submission successfully
+  <img src="Final_Project_SS/mail.jpg">
 
 # Credentials for admin
 ## Username : shashank15062001@gmail.com
