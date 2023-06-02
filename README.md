@@ -1,9 +1,39 @@
+<img src="Final_Project_SS/about.jpg">
+
+
 # About Project
 ## Airport Feedback App collects feedback forms of customer's satisfaction/grievance of different aspects of airport. Project is to collect the data electronically in the form of an app with selectable parameters and rating. The app will be available by default on the free Wi-Fi service that IIA is going to provide at the airport.
 
 # Deployment Link
 ## https://airport-feedback-shashank152001.vercel.app/
 
+# Project ScreenShots
+## Admin Login
+<img src="Final_Project_SS/admin1.jpg">
+
+## Admin Dashboard
+<img src="Final_Project_SS/admin2.jpg">
+
+## Feedback (comman for Passenger and Admin)
+<img src="Final_Project_SS/admin3.jpg">
+
+## FoodResult Feedback
+<img src="Final_Project_SS/admin4.jpg">
+<img src="Final_Project_SS/admin5.jpg">
+ 
+ 
+ ## Passenger Login
+ <img src="Final_Project_SS/project1.jpg">
+ 
+ ## Passenger Dashboard
+  <img src="Final_Project_SS/project3.jpg">
+ 
+  ## Passenger Giving Feedback For FoodCout
+  <img src="Final_Project_SS/project5.jpg">
+  <img src="Final_Project_SS/project7.jpg">
+  
+  ## Passenger submit feedback successfully
+  <img src="Final_Project_SS/project8.jpg">
 
 
 # Credentials for admin
