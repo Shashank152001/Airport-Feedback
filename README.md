@@ -69,7 +69,7 @@
 # Run App on Local Machine
 ## Install Node on Your System
 ## do npm install in frontend and backend folder
-## create .env file in backend folder and add DB_CLUSTER: your cluster name, DB_USERNAME: your DB username, DB_PASSWORD: your db password, PRIVATE_KEY:your private key, EMAIL_ID: your email id, EMAIL_PASSWORD: your email password
+## create .env file in backend folder and add DB_CLUSTER: your cluster name, DB_USERNAME: your DB username, DB_PASSWORD: your db password, PRIVATE_KEY:your private key, EMAIL_ID: your email id, EMAIL_PASSWORD: your email password (can't share mine .env due to some security issues)
 ## cd into backend and do "npm run runServer"
 ## cd into frontend and do "npm run start"
 
