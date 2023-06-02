@@ -12,6 +12,7 @@
 ## <a href="documents/Project_Abstract.pdf">Project Abstract</a>
 ## <a href="documents/Project SRS.pdf">Project SRS</a>
 ## <a href="documents/Project Report.pdf">Project Report</a>
+## <a href="documents/Project_ppt.pptx">Project PPT</a>
 
 # Project ScreenShots
 
