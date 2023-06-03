@@ -15,7 +15,7 @@ backend/.pnp.js
 backend/build
 
 # misc
-.env
+# .env
 frontend/.DS_Store
 backend/.DS_Store
 frontend/.env.local
