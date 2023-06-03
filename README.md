@@ -28,7 +28,7 @@
 ## Feedback (comman for Passenger and Admin)
 <img src="Final_Project_SS/admin3.jpg">
 
-## FoodResult Feedback
+## FoodCourt Feedback Summary
 <img src="Final_Project_SS/admin4.jpg">
 <img src="Final_Project_SS/admin5.jpg">
  
@@ -39,7 +39,7 @@
  ## Passenger Dashboard
   <img src="Final_Project_SS/project3.jpg">
  
-  ## Passenger Giving Feedback For FoodCout
+  ## Passenger Giving Feedback For FoodCourt
   <img src="Final_Project_SS/project5.jpg">
   <img src="Final_Project_SS/project7.jpg">
   
@@ -78,8 +78,8 @@
 # Run App on Local Machine
 ## Install Node on Your System
 ## do npm install in frontend and backend folder
-## create .env file in backend folder and add DB_CLUSTER: your cluster name, DB_USERNAME: your DB username, DB_PASSWORD: your db password, PRIVATE_KEY:your private key, EMAIL_ID: your email id, EMAIL_PASSWORD: your email password 
-## Note- can't share mine .env due to some security and privacy issues
+<!-- ## create .env file in backend folder and add DB_CLUSTER: your cluster name, DB_USERNAME: your DB username, DB_PASSWORD: your db password, PRIVATE_KEY:your private key, EMAIL_ID: your email id, EMAIL_PASSWORD: your email password 
+## Note- can't share mine .env due to some security and privacy issues -->
 ## cd into backend and do "npm run runServer"
 ## cd into frontend and do "npm run start"
 
