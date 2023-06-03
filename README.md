@@ -105,7 +105,7 @@
 
 
 ## Member-4
-## Name : Yuvraj Grakkhar
+## Name : Yuvraj Gakkhar
 ## Roll No: 19ESKIT100
 ## Branch: IT-B (G2)
 ## Role: Backend Developer (Node, express and MongoDB)
